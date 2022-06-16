@@ -10,10 +10,12 @@ export class HomePage  {
 
   public lista;
 
+   // Executa o construtor "inicializar".
   constructor() {
     this.inicializar();
   }
 
+  // O constructor "inicializar" chama o objeto "lista" onde inserimos os dados de cada pessoas.
   inicializar(){
 
     this.lista = [
@@ -25,6 +27,7 @@ export class HomePage  {
     ];
   }
 
+  // Em cada evento (no caso digitacao) na página home é chamado o constructor "buscar".
   buscar(ev: any)  {
     this.inicializar();
 
